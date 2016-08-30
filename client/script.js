@@ -1,19 +1,17 @@
-var ComicApp = angular.module('Comic', []);
+angular.module('Comic', [
+  'ui.router'
+  ])
+  .config(function($stateProvider, $urlRouterProvider) {
 
-ComicApp.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/state1");
 
-    $urlRouterProvider.otherwise('/home');
-
-    $stateProvider
-
-        .state('home', {
-            url: '/home',
-            templateUrl: 'pages/home.html'
-        })
-
-        .state('archive', {
-            url: '/archive',
-            templateUrl: 'pages/archive.html'
-        });
-
+  $stateProvider
+    .state('home', {
+      url: "/home",
+      templateUrl: "pages/home.html"
+    })
+    .state('archive', {
+      url: "/archive",
+      templateUrl: "pages/archive.html"
+    });
 });

@@ -8,19 +8,14 @@ var path       = require('path');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('client'))
 
 var port = process.env.PORT || 8080;
 
 
 var router = express.Router();
 
-// http://localhost:8080/api
-
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/client/index.html'));
-});
-
-app.use('/api', router);
+// http://localhost:8080/
 
 app.listen(port);
 console.log('Setting sail for ' + port);
