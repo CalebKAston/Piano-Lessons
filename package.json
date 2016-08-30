@@ -1,9 +1,26 @@
 {
-    "name": "AustinsComic",
-    "main": "server.js",
-    "dependencies": {
-        "express": "~4.0.0",
-        "mongoose": "~3.6.13",
-        "body-parser": "~1.0.1"
-    }
+  "name": "austins-comic",
+  "version": "1.0.0",
+  "description": "Comic book site",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebKAston/2016-07-solo.git"
+  },
+  "author": "Caleb Aston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebKAston/2016-07-solo/issues"
+  },
+  "homepage": "https://github.com/CalebKAston/2016-07-solo#readme"
 }
