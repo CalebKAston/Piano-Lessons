@@ -3,7 +3,7 @@ angular.module('Comic', [
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise("/state1");
+  $urlRouterProvider.otherwise("/home");
 
   $stateProvider
     .state('home', {
