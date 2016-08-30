@@ -17,7 +17,7 @@ var router = express.Router();
 // http://localhost:8080/api
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/client/index.html'));
 });
 
 app.use('/api', router);

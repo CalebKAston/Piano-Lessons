@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Comic</title>
+</head>
+<body ng-app="Comic">
+  <h1>This will soon be an awesome comic book site!</h1>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Awesome Comic</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="archive">About</a></li>
+    </ul>
+  </nav>
+
+  <div ui-view></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

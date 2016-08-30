@@ -1,0 +1,21 @@
+{
+  "name": "austins-comic",
+  "description": "Comic book site",
+  "main": "server.js",
+  "authors": [
+    "Caleb Aston"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CalebKAston/2016-07-solo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}

@@ -26,12 +26,10 @@ Making a comic book isn't easy. Competition is fierce and finding a publisher wi
 
 This application allows for many people to view the comic, leave comments, and provides proof that a comic is worthy of publishing.
 
-"There is always another secret."
+"There is always another secret." -Kelsier
 
 Getting on board with this product is as easy as going to the website and reading the prologue.
 
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+"This is by far the best user experience I have had with a comic book website!" -Random Citizen
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+And that's it in a nutshell! Get out there, and get into the comic!
