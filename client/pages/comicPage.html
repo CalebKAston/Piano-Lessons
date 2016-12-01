@@ -1,19 +1,21 @@
-<div>
-  <img src="http://www.habitatnewburgh.org/wp-content/uploads/2016/01/Under-Construction1.jpg" alt="some_text" style="width:85%;height:100%;">
+<div class="pageBlock">
+  <p>Content soon to come!</p>
 </div>
-<div ng-submit="addComment(username, message)">
-  <form name="commentForm">
-    <label for="username">Username</label>
-    <input type="text" id="username" ng-model="username">
-    <label for="comment">Comment</label>
-    <input type="text" id="comment" ng-model="message">
-    <button>submit</button>
-  </form>
-  <div>
-    <ul>
-      <li ng-repeat="comment in comments">
-        <h3>{{ comment.username }}</h3>{{ comment.comment }}
-      </li>
-    </ul>
+<div class="block">
+  <div ng-submit="addComment(username, message)">
+    <form name="commentForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" ng-model="username">
+      <label for="comment">Comment</label>
+      <input type="text" id="comment" ng-model="message">
+      <button>Post</button>
+    </form>
+    <div>
+      <ul>
+        <li ng-repeat="comment in comments">
+          <h4>{{ comment.username }}</h4>{{ comment.comment }}
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

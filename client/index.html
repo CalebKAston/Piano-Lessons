@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="Comic">
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Awesome Comic</title>
 </head>
 <body>
-  <h1>This will soon be an awesome comic book site!</h1>
+  <div class="header">
+    <h1>Mali's Survival</h1>
 
-  <nav role="navigation">
-    <div>
-        <h3>Awesome Comic</h3>
-    </div>
-    <ul>
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="archive">Archive</a></li>
-        <li><a ui-sref="comic">Read it!</a></li>
-    </ul>
-  </nav>
+    <nav role="navigation">
+      <span><p><a ui-sref="home">Home</a> <a ui-sref="archive">Archive</a> <a ui-sref="comic">Read it!</a></p></span>
+    </nav>
+
+  </div>
 
   <div ui-view></div>
 

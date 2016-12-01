@@ -1,6 +1,18 @@
 angular.module('Comic', [
   'ui.router'
   ])
+  .controller('CommentController', function($scope, CommentAdder) {
+    $scope.comments = [{username: 'testing', comment: 'This is great!'}];
+
+    $scope.addComment = function(username, comment) {
+      $scope.comments.push(CommentAdder(username, comment));
+    }
+  })
+  .service('CommentAdder', function(){
+    return function(username, comment){
+      return {username: username, comment: comment};
+    }
+  })
   .config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise("/home");
@@ -20,13 +32,3 @@ angular.module('Comic', [
       templateUrl: "pages/comicPage.html"
     });
 });
-
-angular.module('Comments', [])
-
-  .controller('CommentController', function($scope) {
-    $scope.comments = [{username: 'testing', comment: 'This is great!'}];
-
-    $scope.addComment = function(username, comment) {
-      $scope.comments.push({username: username, comment: comment});
-    }
-  });

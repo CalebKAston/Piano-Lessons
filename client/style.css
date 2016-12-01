@@ -1,0 +1,45 @@
+html {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  color: red;
+}
+
+.header {
+  text-align: center;
+}
+
+.header a {
+  background-color: white;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.block {
+  background-color: white;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.pageBlock {
+  background-color: #586477;
+  height: 200px;
+  padding-left: 7px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.pageBlock p {
+  color: white;
+}
+
+.artist {
+  height: 200px;
+  width: 150px;
+}
