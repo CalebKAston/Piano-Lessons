@@ -1,14 +1,16 @@
-angular.module('Comic', [
-  'ui.router'
+angular.module("Comic", [
+  "ui.router"
   ])
-  .controller('CommentController', function($scope, CommentAdder) {
-    $scope.comments = [{username: 'testing', comment: 'This is great!'}];
+  .controller("CommentController", function($scope, CommentAdder) {
+    $scope.comments = [];
 
     $scope.addComment = function(username, comment) {
       $scope.comments.push(CommentAdder(username, comment));
+      $scope.username = "";
+      $scope.message = "";
     }
   })
-  .service('CommentAdder', function(){
+  .service("CommentAdder", function(){
     return function(username, comment){
       return {username: username, comment: comment};
     }
@@ -18,15 +20,15 @@ angular.module('Comic', [
   $urlRouterProvider.otherwise("/home");
 
   $stateProvider
-    .state('home', {
+    .state("home", {
       url: "/home",
       templateUrl: "pages/home.html"
     })
-    .state('archive', {
+    .state("archive", {
       url: "/archive",
       templateUrl: "pages/archive.html"
     })
-    .state('comic',{
+    .state("comic",{
       url: "/comic",
       controller: "CommentController",
       templateUrl: "pages/comicPage.html"
