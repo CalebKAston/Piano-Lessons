@@ -1,1 +1,1 @@
-cd ./server && node server.js
+npm start

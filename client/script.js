@@ -24,13 +24,13 @@ angular.module("Comic", [
       url: "/home",
       templateUrl: "pages/home.html"
     })
-    .state("archive", {
-      url: "/archive",
-      templateUrl: "pages/archive.html"
+    .state("teacher", {
+      url: "/teacher",
+      templateUrl: "pages/about_me.html"
     })
-    .state("comic",{
-      url: "/comic",
+    .state("contact",{
+      url: "/contact",
       controller: "CommentController",
-      templateUrl: "pages/comicPage.html"
+      templateUrl: "pages/contact.html"
     });
 });
